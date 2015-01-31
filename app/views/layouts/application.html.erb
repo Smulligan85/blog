@@ -8,26 +8,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div id="sidebar">
-<div id="logo">
-	<%= link_to root_path do %>
-	<%= image_tag "logo.svg" %>
-	<% end %>
-</div>
-<ul>
-	<li class="category">Website</li>
-	<li><%= link_to "Blog", root_path %></li>
-	<li>About</li>
-</ul>
-<ul>
-	<li class="category">Social</li>
-	<li><a href="http://twitter.com">Twitter</a></li>
-	<li><a href="http://instagram.com">Instagram</a></li>
-	<li><a href="http://github.com">Github</a></li>
-	<li><a href="mailto:admin@example.com">Email</a></li>
-</ul>
+	<div id="sidebar">
+		<div id="logo">
+			<%= link_to root_path do %>
+			<%= image_tag "#" %>
+			<% end %>
+		</div>
+			<ul>
+				<li class="category">Website</li>
+				<li><%= link_to "Blog", root_path %></li>
+				<li>About</li>
+			</ul>
 
-<p class="sign_in">Admin Login</p>
+			<ul>
+				<li class="category">Social</li>
+				<li><a href="http://twitter.com">Twitter</a></li>
+				<li><a href="http://instagram.com">Instagram</a></li>
+				<li><a href="http://github.com">Github</a></li>
+				<li><a href="mailto:admin@example.com">Email</a></li>
+			</ul>
+
+			<p class="sign_in">Admin Login</p>
 </div>
 	
 	<div id="main_content">
@@ -40,7 +41,7 @@
 			</div>
 		</div>
 
-		<%= flash.each do |name, msg| %>
+		<% flash.each do |name, msg| %>
 			<%= content_tag(:div, msg, class: "alert") %>
 		<% end %>
 		<%= yield %>
