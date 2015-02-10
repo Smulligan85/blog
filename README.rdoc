@@ -1,1 +1,3 @@
 Demo Blog Application Using Ruby on Rails
+
+Created by Sean Mulligan February 2014
